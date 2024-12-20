@@ -1,3 +1,4 @@
+![Everlasting Summer/Бесконечное лето](https://shared.steamstatic.com/store_item_assets/steam/apps/331470/header_russian.jpg?t=1729073969)
 # Everlasting-Source
 ## Source code of Visual Novel Everlasting Summer. All files saved in decode rpy format.
 
