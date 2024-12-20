@@ -19,7 +19,7 @@ init 2:
     "persistent.sprite_time=='day'", "mods/LS/bg/lazur_summer/cum_room_day.jpg",
     "persistent.sprite_time=='light_night'", "mods/LS/bg/lazur_summer/cum_room_light_night.jpg",
     "persistent.sprite_time=='night'", "mods/LS/bg/lazur_summer/cum_room_night.jpg",
-    True, "mods/LS/bg/lazur_summer/cum_room.jpg")
+    "True", "mods/LS/bg/lazur_summer/cum_room.jpg")
     image bg cum_hata = ConditionSwitch(
     "persistent.sprite_time=='sunset'", "mods/LS/bg/lazur_summer/cum_hata_sunset.jpg",
     "persistent.sprite_time=='day'", "mods/LS/bg/lazur_summer/cum_hata_day.jpg",

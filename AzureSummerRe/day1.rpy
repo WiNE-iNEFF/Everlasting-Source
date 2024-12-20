@@ -1,6 +1,7 @@
 label EvSuDAY_1: 
     $ backdrop = "days"
     $ new_chapter(1, u"День первый.")
+    $ clear_sprite_time()
     $ day_time()
     $ persistent.sprite_time = 'day'
 
@@ -540,6 +541,7 @@ label EvSuDAY_1:
     dv "Рассказывай!{w} Что ты, кто ты?{w} Чем увлекаешься, где учишься, куда поступать будешь?{w} Или сразу на завод?"
     th "Ничего себе она налетела с расспросами."
 
+    $ day_time()
     $ persistent.sprite_time = 'day'
 
     scene bg road_out_camp with dissolve
@@ -674,10 +676,11 @@ label EvSuDAY_1:
 
     scene bg road_out_camp with dissolve
     "Ведь у меня нет денег и звонить некуда."
-    scene bg ext_houses_day with dissolve
 
+    $ day_time()
     $ persistent.sprite_time = 'day'
-
+    
+    scene bg ext_houses_day with dissolve
     play ambience ambience_camp_center_day fadein 1
     "Из раздумий меня вывела Алиса."
     show dv normal pioneer at cright with dissolve
@@ -914,6 +917,7 @@ label EvSuDAY_1:
     me "Увидимся."
     stop ambience
 
+    $ night_time()
     $ persistent.sprite_time = 'light_night'
 
     play ambience ambience_int_cabin_night fadein 1
@@ -922,6 +926,7 @@ label EvSuDAY_1:
     "Вошёл к себе.{w} На столе пакет со средствами гигиены и часы на маленьких ножках.{w} Покрутил часы в руках."
     th "И как тут будильник наводиться?{w} Ладно, хер с ним, так встану."
 
+    $ night_time()
     $ persistent.sprite_time = 'night'
 
     scene bg cum_room with dissolve
@@ -935,8 +940,8 @@ label EvSuDAY_1:
     scene bg black with dissolve
     show blinking
 
-    $ day_time()
-    $ persistent.sprite_time = 'day'
+    $ prolog_time()
+    $ persistent.sprite_time = 'night'
 
     play music music_list['door_to_nightmare'] fadein 1
     show prologue_dream
