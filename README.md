@@ -1,0 +1,1 @@
+![Afterglow: Remaster](https://steamuserimages-a.akamaihd.net/ugc/1849298342505049591/61868AE600DB7AFDD5B687B3DDD09A40610248CB/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true)
